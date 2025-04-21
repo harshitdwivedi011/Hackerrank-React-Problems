@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
+// I was asked to fetch an API that returns a list of product IDs. 
+// For each of these product IDs, I had to fetch additional details using another API 
+// and display the complete product information on the UI using React.
+
 function App() {
   const [ids, setIDs] = useState([]);
   const [productDetails, setProductDetails] = useState([]);
