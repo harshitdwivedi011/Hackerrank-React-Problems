@@ -1,0 +1,29 @@
+{
+"productDetails": [
+    {
+      "id": 1,
+      "productName": "Samsung AC",
+      "price": 48000
+    },
+    {
+      "id": 2,
+      "productName": "Llyod AC",
+      "price": 42000
+    },
+    {
+      "id": 3,
+      "productName": "Blue Star AC",
+      "price": 41000
+    },
+    {
+      "id": 4,
+      "productName": "LG AC",
+      "price": 46000
+    },
+    {
+      "id": 5,
+      "productName": "Godrej AC",
+      "price": 39000
+    }
+  ]
+}
