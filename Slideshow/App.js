@@ -11,7 +11,7 @@ function App() {
     <>
       <h8k-navbar header="Slideshow App"></h8k-navbar>
       <div className="App">
-        <Slides slides={SLIDES_DATA} />
+        <Slides slides={SLIDES_DATA} /> 
       </div>
     </>
   );
