@@ -2,8 +2,10 @@ import Contact from "./Contact";
 import Home from "./Home";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import FavouriteMovies from "./FavouriteMovies";
+import Movies from "./Movies";
 function App() {
-  const theme = useSelector((state) => state.theme);
+  const theme = useSelector((state) => state.toggleReducer.theme);
   const dispatch = useDispatch();
   const toggleTheme = () => {
     dispatch({ type: "TOGGLE_THEME" });
@@ -35,6 +37,22 @@ function App() {
                 {" "}
                 Contact{" "}
               </Link>
+              <Link
+                to="/movies"
+                className="me-2 p-4 fs-5 toplink"
+                style={navStyle}
+              >
+                {" "}
+                Movies{" "}
+              </Link>
+              <Link
+                to="/favourites"
+                className="me-2 p-4 fs-5 toplink"
+                style={navStyle}
+              >
+                {" "}
+                Favourite Movies{" "}
+              </Link>
             </div>
             <div className="col-xl-2">
               <button className="btn btn-warning" onClick={toggleTheme}>
@@ -46,6 +64,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/favourites" element={<FavouriteMovies />} />
         </Routes>
       </Router>
     </div>

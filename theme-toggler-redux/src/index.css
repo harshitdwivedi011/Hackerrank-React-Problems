@@ -15,3 +15,8 @@ code {
 .toplink:hover{
   background-color: rgb(235, 174, 60);
 }
+
+button.favMovies:hover{
+  background-color: rgb(102, 102, 178);
+  color: aliceblue;
+}

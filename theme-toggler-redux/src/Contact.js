@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 
 const Contact = () => {
-  const theme = useSelector((state) => state.theme);
+  const theme = useSelector((state) => state.toggleReducer.theme);
   const contactStyle = {
     background: theme === "dark" ? "white" : "black",
     color: theme === "dark" ? "black" : "white",
@@ -11,10 +11,7 @@ const Contact = () => {
     <div className="container mt-5 mb-5 ">
       <div className="row">
         <div className="col-xl-4"></div>
-        <div
-          className="col-xl-4 rounded p-4 mb-5"
-          style={contactStyle}
-        >
+        <div className="col-xl-4 rounded p-4 mb-5" style={contactStyle}>
           <h3 className="mb-4 text-center">Contact Us</h3>
           <div className="mb-4">
             <label for="">Full Name</label>
